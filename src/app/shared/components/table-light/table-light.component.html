@@ -1,8 +1,27 @@
 <div class="container">
+  <!-- <div class="row">
+    <div *ngFor="let col of headers" class="col">{{ col }}</div>
+  </div>
   <div class="row">
-    <div *ngFor="let col of headers" class="col">{{col}}</div>
+    <div *ngFor="let data of tableData" class="col">
+      <div>{{ data }}</div>
     </div>
-    <div class="row"><div *ngFor="let data of tableData" class="col">
-      <div>{{data}}</div>
-    </div></div>
-</div>
+  </div>
+</div> -->
+
+<table class="table">
+  <!-- thead utile pour le référencement -->
+  <thead>
+    <!-- table row (ligne) -->
+    <tr>
+      <!--   table header cells (th) -->
+      <!-- itérer dans headers -->
+      <th *ngFor='let item of headers' scope="col">{{item}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-content></ng-content>
+    <!-- itérer dans collection -->
+  </tbody>
+</table>
+

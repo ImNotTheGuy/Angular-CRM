@@ -13,7 +13,7 @@ export class ClientsService {
   private collection$!: Observable<Client[]>;
 
   constructor(private http: HttpClient) {
-    this.collection = this.http.get<Client[]>(this.URL_CLIENTS);
+    this.collection$ = this.http.get<Client[]>(this.URL_CLIENTS);
   }
 
   get collection() {

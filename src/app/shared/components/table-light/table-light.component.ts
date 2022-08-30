@@ -9,16 +9,24 @@ import { Order } from 'src/app/core/models/order';
 })
 export class TableLightComponent implements OnInit {
 
-  @Input() tableData!: any[];
+  // @Input() tableData!: any[];
   @Input() headers!: string[];
+
+  valuesList: string[] = [];
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  ngOnChanges(){
-
-  }
+  // ngOnChanges(){
+  //   console.log('this.tableData (on changes) :>> ', this.tableData);
+  //   console.log('this.headers (on changes) :>> ', this.headers);
+  //   this.tableData.forEach(data => {
+  //     Object.entries(data).forEach(value => {
+  //       this.valuesList.push(data);
+  //     })
+  //   });
+  // }
 
 }

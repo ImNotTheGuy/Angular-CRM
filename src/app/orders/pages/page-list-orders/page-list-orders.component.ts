@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Order } from 'src/app/core/models/order';
+import { environment } from 'src/environments/environment';
 import { OrdersService } from '../../services/orders.service';
 
 @Component({
@@ -10,7 +11,7 @@ import { OrdersService } from '../../services/orders.service';
 export class PageListOrdersComponent implements OnInit {
   title = '📦 Orders';
 
-  URL_ORDERS = 'http://localhost:3000/orders';
+  URL_ORDERS = environment.urlApi + 'orders';
   orderList!: Order[];
 
   public headers = [

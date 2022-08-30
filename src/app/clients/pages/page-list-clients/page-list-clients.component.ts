@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Client } from 'src/app/core/models/client';
+import { environment } from 'src/environments/environment';
 import { ClientsService } from '../../services/clients.service';
 
 @Component({
@@ -10,19 +11,16 @@ import { ClientsService } from '../../services/clients.service';
 export class PageListClientsComponent implements OnInit {
   title = '💃🏽 Clients';
 
-  URL_CLIENTS = 'http://localhost:3000/clients';
+   URL_CLIENTS = environment.urlApi + 'clients';
 
-  clientList !: Client[];
+  clientList!: Client[];
   properties: any;
   headers = ['state', 'tva', 'id', 'name', 'totalCaHt', 'comment'];
 
   constructor(private clientsService: ClientsService) {
-    this.clientsService
-      .collection
-      .subscribe((data) => {
-        this.clientList = data;
-        console.log(this.clientList); // attention de ne écrire cette ligne en dehors des {}, sinon undefined
-      });
+    this.clientsService.collection.subscribe((data) => {
+      this.clientList = data;
+    });
   }
 
   ngOnInit(): void {}

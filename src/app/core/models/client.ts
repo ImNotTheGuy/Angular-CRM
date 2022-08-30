@@ -14,4 +14,5 @@ export class Client {
       Object.assign(this, client);
     }
   }
+
 }

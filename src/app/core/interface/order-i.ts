@@ -9,4 +9,6 @@ export interface OrderI {
   tjmHt: number;
   tva: number;
   typePresta: string;
+  totalHT(): number;
+  totalTTC(): number;
 }
