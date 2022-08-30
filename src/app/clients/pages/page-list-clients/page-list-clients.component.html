@@ -1,0 +1,34 @@
+<span *ngIf="!clientList">No clients in database !</span>
+
+<app-template-full-width [title]="title">
+  <app-table-light
+    [tableData]="clientList"
+    [headers]="headers"
+  ></app-table-light>
+</app-template-full-width>
+
+<div class="container mt-3">
+  <div class="row">
+    <div class="app-color-primary col-2">ID</div>
+    <div class="app-color-primary col-2">NAME</div>
+    <div class="app-color-primary col-2">COMMENT</div>
+    <div class="app-color-primary col-2">STATE</div>
+  </div>
+  <hr />
+  <div *ngFor="let client of clientList">
+    <div class="row">
+      <div class="text-secondary col-2">{{ client.id }}</div>
+      <div class="text-secondary col-2">{{ client.name }}</div>
+      <div class="text-secondary col-2">{{ client.comment }}</div>
+      <div
+        [ngClass]="{
+          'state-success blue': client.state === 'ACTIVE',
+          'state-danger': client.state === 'INACTIVE'
+        }"
+        class="col-2"
+      >
+        {{ client.state }}
+      </div>
+    </div>
+  </div>
+</div>

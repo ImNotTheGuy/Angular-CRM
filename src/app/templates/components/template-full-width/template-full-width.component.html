@@ -1,0 +1,21 @@
+<div class="bandeau">
+  <h1>
+    {{ title }}
+  </h1>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="row">
+      <div *ngFor="let column of columns" class="col">{{ column }}</div>
+    </div>
+    <div class="row">
+      {{ dataList }}
+      <div *ngFor="let data of dataList">
+        <div>{{ data }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+  <ng-content></ng-content>
+</div>

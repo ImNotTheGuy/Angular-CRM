@@ -1,0 +1,25 @@
+  <header class="fixed-top">
+    <span class="btn" (click)="toggle()">
+      <ng-content *ngIf="!navIsOpen" select=".tr-icon-bars"></ng-content>
+      <ng-content *ngIf="navIsOpen" select=".tr-icon-close"></ng-content>
+    </span>
+
+    <div></div>
+    <ng-content select=".tr-header"></ng-content>
+  </header>
+  <main [ngClass]="{ 'close-aside': !navIsOpen }">
+    <div class="shadow position-fixed"></div>
+    <aside>
+      <div class="scroller">
+        <ng-content select=".tr-nav"></ng-content>
+      </div>
+    </aside>
+    <div class="page">
+      <div class="contents">
+        <ng-content select=".tr-router"></ng-content>
+      </div>
+      <footer>
+        <ng-content select=".tr-footer"></ng-content>
+      </footer>
+    </div>
+  </main>

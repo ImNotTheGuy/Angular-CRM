@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+/* Importing Bootstrap SCSS file. */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+@import "~src/stylings/layout";
+@import "~src/stylings/theme";
+@import "~src/stylings/fonts";
+
+// @import "/src/stylings/_fonts.scss";
+// @import "/src/stylings/_layout.scss";
+// @import "/src/stylings/_theme.scss";
+
+// --app-bg-light: #f0d8ea;
+// --app-darklight: #ebedf2;
+// --app-darklight2: #bebdbd;
+.state-success {
+  color: var(--app-success);
+}
+
+.state-warning {
+  color: var(--app-warning);
+}
+
+.state-danger {
+  color: var(--app-error);
+}
+
+.app-color-primary {
+  color: var(--app-primary);
+}
