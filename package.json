@@ -10,7 +10,8 @@
     "jsonServer": "json-server --watch db.json",
     "compodoc:build": "compodoc -p tsconfig.doc.json",
     "compodoc:build-and-serve": "compodoc -p tsconfig.doc.json -s",
-    "compodoc:serve": "compodoc -s"
+    "compodoc:serve": "compodoc -s",
+    "compodoc": "compodoc -p tsconfig.json -o -s"
   },
   "private": true,
   "dependencies": {
