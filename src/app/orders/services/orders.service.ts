@@ -1,17 +1,26 @@
 import { Injectable } from '@angular/core';
 
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { Order } from 'src/app/core/models/order';
 
 @Injectable({
   providedIn: 'root',
 })
 export class OrdersService {
-
   URL_ORDERS = 'http://localhost:3000/orders';
 
-  constructor(private http: HttpClient) {}
+  private collection$!: Observable<Order[]>;
 
-  getListOrders() {
-    return this.http.get(this.URL_ORDERS);
+  constructor(private http: HttpClient) {
+    this.collection = this.http.get<Order[]>(this.URL_ORDERS);
+  }
+
+  get collection() {
+    return this.collection$;
+  }
+
+  set collection(col: Observable<Order[]>) {
+    this.collection$ = col;
   }
 }

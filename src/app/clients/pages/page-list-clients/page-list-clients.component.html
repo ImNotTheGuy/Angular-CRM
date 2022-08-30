@@ -4,11 +4,16 @@
   <app-table-light
     [tableData]="clientList"
     [headers]="headers"
-  ></app-table-light>
+  >
+<app-icon-edit class="tr-edit"></app-icon-edit>
+<app-icon-delete class="tr-delete"></app-icon-delete>
+</app-table-light>
 </app-template-full-width>
 
 <div class="container mt-3">
   <div class="row">
+    <div class="col"><app-icon-edit></app-icon-edit></div>
+    <div class="col"><app-icon-delete></app-icon-delete></div>
     <div class="app-color-primary col-2">ID</div>
     <div class="app-color-primary col-2">NAME</div>
     <div class="app-color-primary col-2">COMMENT</div>

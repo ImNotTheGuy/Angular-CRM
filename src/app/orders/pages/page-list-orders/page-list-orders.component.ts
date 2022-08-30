@@ -25,15 +25,17 @@ export class PageListOrdersComponent implements OnInit {
   ];
 
   constructor(private ordersService: OrdersService) {
-    this.ordersService.getListOrders().subscribe((data: any) => {
-      this.orderList = data;
-    });
+    this.ordersService
+      .collection
+      .subscribe((data) => {
+        this.orderList = data;
+      });
   }
 
   ngOnInit(): void {}
 
 
   ngOnChanges(){
-    
+
   }
 }

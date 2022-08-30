@@ -12,17 +12,18 @@ export class PageListClientsComponent implements OnInit {
 
   URL_CLIENTS = 'http://localhost:3000/clients';
 
-  clientList: Client[] = [];
+  clientList !: Client[];
   properties: any;
   headers = ['state', 'tva', 'id', 'name', 'totalCaHt', 'comment'];
 
   constructor(private clientsService: ClientsService) {
-    this.clientsService.getListClients().subscribe((data: any) => {
-      this.clientList = data;
-      this.properties = Object.getOwnPropertyNames(data[0]);
-    });
+    this.clientsService
+      .collection
+      .subscribe((data) => {
+        this.clientList = data;
+        console.log(this.clientList); // attention de ne écrire cette ligne en dehors des {}, sinon undefined
+      });
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 }

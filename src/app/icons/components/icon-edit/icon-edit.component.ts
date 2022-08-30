@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faEdit } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-icon-edit',
@@ -13,6 +13,6 @@ export class IconEditComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  faTrash = faTrash;
+  faEdit = faEdit;
 
 }
