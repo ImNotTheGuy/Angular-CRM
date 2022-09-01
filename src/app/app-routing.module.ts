@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { Router,PreloadAllModules , RouterModule, Routes } from '@angular/router';
+import { Router, PreloadAllModules , RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   // { path: 'clients', component: PageListClientsComponent},

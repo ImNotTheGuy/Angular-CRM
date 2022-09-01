@@ -1,17 +1,39 @@
-<span *ngIf="!clientList">No clients in database !</span>
+<span *ngIf="!collection">No clients in database !</span>
 
 <app-template-full-width [title]="title">
-  <app-table-light
+  <app-table-light [headers]="headers">
+    <tr *ngFor="let data of collection">
+      <td>
+        <a routerLink="edit/{{ data.id }}">
+          <app-icon-edit class="tr-edit btn"></app-icon-edit
+        ></a>
+        <a routerLink="delete/{{ data.id }}">
+          <app-icon-delete class="tr-delete btn"></app-icon-delete>
+        </a>
+      </td>
+      <td>{{ data.tva }}%</td>
+      <td>{{ data.id }}</td>
+      <td>{{ data.name }}</td>
+      <td>{{ data.totalCaHt | number }}</td>
+      <td>{{ data.comment }}</td>
 
-    [headers]="headers"
-
-  >
-<app-icon-edit class="tr-edit"></app-icon-edit>
-<app-icon-delete class="tr-delete"></app-icon-delete>
-</app-table-light>
+      <td appState [state]="data.state">
+        <select (change)="changeState(data, $event)">
+          <option
+            *ngFor="let state of states"
+            [selected]="state === data.state"
+            [value]="state"
+          >
+            {{ state }}
+          </option>
+        </select>
+      </td>
+    </tr>
+  </app-table-light>
 </app-template-full-width>
+<app-btn [classList]="'btn btn-primary ms-5'" [routerLink]="'add'"></app-btn>
 
-<div class="container mt-3">
+<!-- <div class="container mt-3">
   <div class="row">
     <div class="app-color-primary col-2">ID</div>
     <div class="app-color-primary col-2">NAME</div>
@@ -19,7 +41,7 @@
     <div class="app-color-primary col-2">STATE</div>
   </div>
   <hr />
-  <div *ngFor="let client of clientList">
+  <div *ngFor="let client of collection">
     <div class="row">
       <div class="text-secondary col-2">{{ client.id }}</div>
       <div class="text-secondary col-2">{{ client.name }}</div>
@@ -35,4 +57,4 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->

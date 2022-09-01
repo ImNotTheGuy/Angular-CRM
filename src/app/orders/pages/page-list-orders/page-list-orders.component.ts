@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { StateOrder } from 'src/app/core/enums/state-order';
 import { Order } from 'src/app/core/models/order';
-import { environment } from 'src/environments/environment';
 import { OrdersService } from '../../services/orders.service';
 
 @Component({
@@ -11,8 +12,12 @@ import { OrdersService } from '../../services/orders.service';
 export class PageListOrdersComponent implements OnInit {
   title = '📦 Orders';
 
-  URL_ORDERS = environment.urlApi + 'orders';
+
   orderList!: Order[];
+  collection$!: Observable<Order[]>;
+  states = Object.values(StateOrder);
+
+  currentStateClass!: string;
 
   public headers = [
     'Action',
@@ -26,17 +31,19 @@ export class PageListOrdersComponent implements OnInit {
   ];
 
   constructor(private ordersService: OrdersService) {
-    this.ordersService
-      .collection
-      .subscribe((data) => {
-        this.orderList = data;
-      });
+    this.collection$ = this.ordersService.collection;
+  }
+
+  changeState(order: Order, event: Event): void {
+    const target = event.target as HTMLSelectElement;
+    const newState = target.value as StateOrder;
+    this.ordersService.changeState(order, newState).subscribe((res) => {
+      Object.assign(order, res);
+    });
+
   }
 
   ngOnInit(): void {}
 
-
-  ngOnChanges(){
-
-  }
+  ngOnChanges() {}
 }

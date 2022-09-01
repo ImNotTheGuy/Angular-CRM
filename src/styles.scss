@@ -15,18 +15,12 @@
 // --app-bg-light: #f0d8ea;
 // --app-darklight: #ebedf2;
 // --app-darklight2: #bebdbd;
-.state-success {
-  color: var(--app-success);
-}
 
-.state-warning {
-  color: var(--app-warning);
-}
-
-.state-danger {
-  color: var(--app-error);
-}
 
 .app-color-primary {
   color: var(--app-primary);
 }
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+

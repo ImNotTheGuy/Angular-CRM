@@ -7,6 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageAddClientComponent implements OnInit {
 
+  headers = [
+    'Action',
+    'TVA',
+    'id',
+    'Name',
+    'Total CA (HT)',
+    'Comment',
+    'State'
+  ];
+
   constructor() { }
 
   ngOnInit(): void {

@@ -1,71 +1,38 @@
-<span *ngIf="!orderList">No orders in database !</span>
-
-<app-template-full-width [title]="title">
+<app-template-full-width
+  [title]="title"
+  *ngIf="collection$ | async as collection"
+>
   <app-table-light [headers]="headers">
-    <tr *ngFor="let data of orderList">
+    <tr *ngFor="let data of collection">
       <td>
-        <app-icon-edit
-          id="{{ 'edit' + data.id }}"
-          class="tr-edit btn"
-        ></app-icon-edit>
-        <app-icon-delete
-          id="{{ 'delete' + data.id }}"
-          class="tr-delete btn"
-        ></app-icon-delete>
+        <a routerLink="edit/{{ data.id }}">
+          <app-icon-edit class="tr-edit btn"></app-icon-edit
+        ></a>
+        <a routerLink="delete/{{ data.id }}">
+          <app-icon-delete class="tr-delete btn"></app-icon-delete>
+        </a>
       </td>
       <td>{{ data.typePresta }}</td>
       <td>{{ data.client }}</td>
       <td>{{ data.nbJours }}</td>
-      <td>{{ data.nbJours }}</td>
       <td>{{ data.tjmHt | number: "1.0-0" }}</td>
       <td>{{ data | total | number: "1.0-0" }}</td>
       <td>{{ data | total: true | number: "1.0-0" }}</td>
-      <td>
-        <select
-        
-          [ngClass]="{
-            'state-success': data.state === 'CONFIRMED',
-            'state-warning': data.state === 'OPTION',
-            'state-danger': data.state === 'CANCELLED'
-          }"
-          name=""
-          id=""
+
+      <td
+      appState [state]="data.state">
+        <select (change)="changeState(data, $event)"
         >
-          <option value="CONFIRMED">
-            CONFIRMED
-          </option>
-          <option value="OPTION">OPTION</option>
-          <option value="CANCELLED">
-            CANCELLED
+          <option
+            *ngFor="let state of states"
+            [selected]="state === data.state"
+            [value]="state"
+          >
+            {{ state }}
           </option>
         </select>
       </td>
     </tr>
   </app-table-light>
 </app-template-full-width>
-<div class="container mt-3">
-  <div class="row">
-    <div class="app-color-primary col-2">ID</div>
-    <div class="app-color-primary col-2">CLIENT</div>
-    <div class="app-color-primary col-2">COMMENT</div>
-    <div class="app-color-primary col-2">STATE</div>
-  </div>
-  <hr />
-  <div *ngFor="let order of orderList">
-    <div class="row">
-      <div class="text-secondary col-2 mt-2">{{ order.id }}</div>
-      <div class="text-secondary col-2 mt-2">{{ order.client }}</div>
-      <div class="text-secondary col-2 mt-2">{{ order.comment }}</div>
-      <div
-        [ngClass]="{
-          'state-success': order.state === 'CONFIRMED',
-          'state-warning': order.state === 'OPTION',
-          'state-danger': order.state === 'CANCELLED'
-        }"
-        class="col-2 mt-2"
-      >
-        {{ order.state }}
-      </div>
-    </div>
-  </div>
-</div>
+<app-btn [classList]="'btn btn-primary ms-5'" [routerLink]="'add'"></app-btn>
