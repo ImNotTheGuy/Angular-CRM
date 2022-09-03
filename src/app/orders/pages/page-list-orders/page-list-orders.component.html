@@ -5,10 +5,10 @@
   <app-table-light [headers]="headers">
     <tr *ngFor="let data of collection">
       <td>
-        <a routerLink="edit/{{ data.id }}">
+        <a (click)="goToEdit(data)">
           <app-icon-edit class="tr-edit btn"></app-icon-edit
         ></a>
-        <a routerLink="delete/{{ data.id }}">
+        <a (click)="deleteById(data.id)">
           <app-icon-delete class="tr-delete btn"></app-icon-delete>
         </a>
       </td>
@@ -19,10 +19,8 @@
       <td>{{ data | total | number: "1.0-0" }}</td>
       <td>{{ data | total: true | number: "1.0-0" }}</td>
 
-      <td
-      appState [state]="data.state">
-        <select (change)="changeState(data, $event)"
-        >
+      <td appState [state]="data.state">
+        <select (change)="changeState(data, $event)">
           <option
             *ngFor="let state of states"
             [selected]="state === data.state"
@@ -33,6 +31,11 @@
         </select>
       </td>
     </tr>
+    <app-btn
+      [styleBtn]="'btn btn-primary ms-5 mt-5'"
+      [routerLink]="'add'"
+      label="Add"
+    >
+    </app-btn>
   </app-table-light>
 </app-template-full-width>
-<app-btn [classList]="'btn btn-primary ms-5'" [routerLink]="'add'"></app-btn>

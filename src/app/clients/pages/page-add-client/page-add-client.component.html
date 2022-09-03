@@ -1,1 +1,7 @@
-<app-template-form [properties]="headers"></app-template-form>
+<app-template-full-width [title]="'Add a client'">
+  
+  <app-form-client
+    [client]="client"
+    (onSubmitEvent)="add($event)"
+  ></app-form-client>
+</app-template-full-width>

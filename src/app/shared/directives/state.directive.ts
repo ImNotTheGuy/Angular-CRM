@@ -1,6 +1,4 @@
 import { Directive, HostBinding, Input } from '@angular/core';
-import { StateOrder as stateOrder } from 'src/app/core/enums/state-order';
-import { Order } from 'src/app/core/models/order';
 
 @Directive({
   selector: '[appState]'
@@ -26,7 +24,6 @@ export class StateDirective {
 
   ngOnChanges(){
     this.tdClassName = this.stateClassMap.get(this.state);
-    console.log(this.state, 'model');
   }
 
 }

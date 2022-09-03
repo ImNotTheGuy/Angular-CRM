@@ -18,7 +18,8 @@ import { RouterModule } from '@angular/router';
     StateDirective
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     TemplatesModule,

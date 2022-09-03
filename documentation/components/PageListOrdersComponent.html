@@ -134,6 +134,12 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                <a href="#collection$" >collection$</a>
+                            </li>
+                            <li>
+                                <a href="#currentStateClass" >currentStateClass</a>
+                            </li>
+                            <li>
                                     <span class="modifier">Public</span>
                                 <a href="#headers" >headers</a>
                             </li>
@@ -141,10 +147,10 @@
                                 <a href="#orderList" >orderList</a>
                             </li>
                             <li>
-                                <a href="#title" >title</a>
+                                <a href="#states" >states</a>
                             </li>
                             <li>
-                                <a href="#URL_ORDERS" >URL_ORDERS</a>
+                                <a href="#title" >title</a>
                             </li>
                         </ul>
                     </td>
@@ -158,6 +164,9 @@
                 <tr>
                     <td class="col-md-4">
                         <ul class="index-list">
+                            <li>
+                                <a href="#changeState" >changeState</a>
+                            </li>
                             <li>
                                 <a href="#ngOnChanges" >ngOnChanges</a>
                             </li>
@@ -187,7 +196,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/orders/pages/page-list-orders/page-list-orders.component.ts:26</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/orders/pages/page-list-orders/page-list-orders.component.ts:31</a></div>
                             </td>
                         </tr>
 
@@ -238,6 +247,87 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="changeState"></a>
+                    <span class="name">
+                        <span ><b>changeState</b></span>
+                        <a href="#changeState"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeState(order: <a href="../classes/Order.html" target="_self">Order</a>, event: <a href="https://angular.io/api/router/Event" target="_blank">Event</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="37"
+                            class="link-to-prism">src/app/orders/pages/page-list-orders/page-list-orders.component.ts:37</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>order</td>
+                                    <td>
+                                                <code><a href="../classes/Order.html" target="_self" >Order</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/router/Event" target="_blank" >Event</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="ngOnChanges"></a>
                     <span class="name">
                         <span ><b>ngOnChanges</b></span>
@@ -254,8 +344,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="39"
-                            class="link-to-prism">src/app/orders/pages/page-list-orders/page-list-orders.component.ts:39</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="48"
+                            class="link-to-prism">src/app/orders/pages/page-list-orders/page-list-orders.component.ts:48</a></div>
                 </td>
             </tr>
 
@@ -291,8 +381,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="36"
-                            class="link-to-prism">src/app/orders/pages/page-list-orders/page-list-orders.component.ts:36</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="46"
+                            class="link-to-prism">src/app/orders/pages/page-list-orders/page-list-orders.component.ts:46</a></div>
                 </td>
             </tr>
 
@@ -314,6 +404,58 @@
     <h3 id="inputs">
         Properties
     </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="collection$"></a>
+                    <span class="name">
+                        <span ><b>collection$</b></span>
+                        <a href="#collection$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Order.html" target="_self" >Observable&lt;Order[]&gt;</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/orders/pages/page-list-orders/page-list-orders.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentStateClass"></a>
+                    <span class="name">
+                        <span ><b>currentStateClass</b></span>
+                        <a href="#currentStateClass"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/orders/pages/page-list-orders/page-list-orders.component.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
     <table class="table table-sm table-bordered">
         <tbody>
             <tr>
@@ -348,7 +490,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/orders/pages/page-list-orders/page-list-orders.component.ts:17</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/orders/pages/page-list-orders/page-list-orders.component.ts:22</a></div>
                         </td>
                     </tr>
 
@@ -374,7 +516,32 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/orders/pages/page-list-orders/page-list-orders.component.ts:15</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/orders/pages/page-list-orders/page-list-orders.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="states"></a>
+                    <span class="name">
+                        <span ><b>states</b></span>
+                        <a href="#states"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>Object.values(StateOrder)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/orders/pages/page-list-orders/page-list-orders.component.ts:18</a></div>
                         </td>
                     </tr>
 
@@ -405,32 +572,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/orders/pages/page-list-orders/page-list-orders.component.ts:12</a></div>
-                        </td>
-                    </tr>
-
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="URL_ORDERS"></a>
-                    <span class="name">
-                        <span ><b>URL_ORDERS</b></span>
-                        <a href="#URL_ORDERS"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>environment.urlApi + &#x27;orders&#x27;</code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/orders/pages/page-list-orders/page-list-orders.component.ts:14</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/orders/pages/page-list-orders/page-list-orders.component.ts:13</a></div>
                         </td>
                     </tr>
 
@@ -444,8 +586,9 @@
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { Observable } from &#x27;rxjs&#x27;;
+import { StateOrder } from &#x27;src/app/core/enums/state-order&#x27;;
 import { Order } from &#x27;src/app/core/models/order&#x27;;
-import { environment } from &#x27;src/environments/environment&#x27;;
 import { OrdersService } from &#x27;../../services/orders.service&#x27;;
 
 @Component({
@@ -456,8 +599,12 @@ import { OrdersService } from &#x27;../../services/orders.service&#x27;;
 export class PageListOrdersComponent implements OnInit {
   title &#x3D; &#x27;📦 Orders&#x27;;
 
-  URL_ORDERS &#x3D; environment.urlApi + &#x27;orders&#x27;;
+
   orderList!: Order[];
+  collection$!: Observable&lt;Order[]&gt;;
+  states &#x3D; Object.values(StateOrder);
+
+  currentStateClass!: string;
 
   public headers &#x3D; [
     &#x27;Action&#x27;,
@@ -471,95 +618,64 @@ export class PageListOrdersComponent implements OnInit {
   ];
 
   constructor(private ordersService: OrdersService) {
-    this.ordersService
-      .collection
-      .subscribe((data) &#x3D;&gt; {
-        this.orderList &#x3D; data;
-      });
+    this.collection$ &#x3D; this.ordersService.collection;
+  }
+
+  changeState(order: Order, event: Event): void {
+    const target &#x3D; event.target as HTMLSelectElement;
+    const newState &#x3D; target.value as StateOrder;
+    this.ordersService.changeState(order, newState).subscribe((res) &#x3D;&gt; {
+      Object.assign(order, res);
+    });
+
   }
 
   ngOnInit(): void {}
 
-
-  ngOnChanges(){
-
-  }
+  ngOnChanges() {}
 }
 </code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;span *ngIf&#x3D;&quot;!orderList&quot;&gt;No orders in database !&lt;/span&gt;
-
-&lt;app-template-full-width [title]&#x3D;&quot;title&quot;&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;app-template-full-width
+  [title]&#x3D;&quot;title&quot;
+  *ngIf&#x3D;&quot;collection$ | async as collection&quot;
+&gt;
   &lt;app-table-light [headers]&#x3D;&quot;headers&quot;&gt;
-    &lt;tr *ngFor&#x3D;&quot;let data of orderList&quot;&gt;
+    &lt;tr *ngFor&#x3D;&quot;let data of collection&quot;&gt;
       &lt;td&gt;
-        &lt;app-icon-edit
-          id&#x3D;&quot;{{ &#x27;edit&#x27; + data.id }}&quot;
-          class&#x3D;&quot;tr-edit btn&quot;
-        &gt;&lt;/app-icon-edit&gt;
-        &lt;app-icon-delete
-          id&#x3D;&quot;{{ &#x27;delete&#x27; + data.id }}&quot;
-          class&#x3D;&quot;tr-delete btn&quot;
-        &gt;&lt;/app-icon-delete&gt;
+        &lt;a routerLink&#x3D;&quot;edit/{{ data.id }}&quot;&gt;
+          &lt;app-icon-edit class&#x3D;&quot;tr-edit btn&quot;&gt;&lt;/app-icon-edit
+        &gt;&lt;/a&gt;
+        &lt;a routerLink&#x3D;&quot;delete/{{ data.id }}&quot;&gt;
+          &lt;app-icon-delete class&#x3D;&quot;tr-delete btn&quot;&gt;&lt;/app-icon-delete&gt;
+        &lt;/a&gt;
       &lt;/td&gt;
       &lt;td&gt;{{ data.typePresta }}&lt;/td&gt;
       &lt;td&gt;{{ data.client }}&lt;/td&gt;
       &lt;td&gt;{{ data.nbJours }}&lt;/td&gt;
-      &lt;td&gt;{{ data.nbJours }}&lt;/td&gt;
       &lt;td&gt;{{ data.tjmHt | number: &quot;1.0-0&quot; }}&lt;/td&gt;
       &lt;td&gt;{{ data | total | number: &quot;1.0-0&quot; }}&lt;/td&gt;
       &lt;td&gt;{{ data | total: true | number: &quot;1.0-0&quot; }}&lt;/td&gt;
-      &lt;td&gt;
-        &lt;select
-        
-          [ngClass]&#x3D;&quot;{
-            &#x27;state-success&#x27;: data.state &#x3D;&#x3D;&#x3D; &#x27;CONFIRMED&#x27;,
-            &#x27;state-warning&#x27;: data.state &#x3D;&#x3D;&#x3D; &#x27;OPTION&#x27;,
-            &#x27;state-danger&#x27;: data.state &#x3D;&#x3D;&#x3D; &#x27;CANCELLED&#x27;
-          }&quot;
-          name&#x3D;&quot;&quot;
-          id&#x3D;&quot;&quot;
+
+      &lt;td
+      appState [state]&#x3D;&quot;data.state&quot;&gt;
+        &lt;select (change)&#x3D;&quot;changeState(data, $event)&quot;
         &gt;
-          &lt;option value&#x3D;&quot;CONFIRMED&quot;&gt;
-            CONFIRMED
-          &lt;/option&gt;
-          &lt;option value&#x3D;&quot;OPTION&quot;&gt;OPTION&lt;/option&gt;
-          &lt;option value&#x3D;&quot;CANCELLED&quot;&gt;
-            CANCELLED
+          &lt;option
+            *ngFor&#x3D;&quot;let state of states&quot;
+            [selected]&#x3D;&quot;state &#x3D;&#x3D;&#x3D; data.state&quot;
+            [value]&#x3D;&quot;state&quot;
+          &gt;
+            {{ state }}
           &lt;/option&gt;
         &lt;/select&gt;
       &lt;/td&gt;
     &lt;/tr&gt;
   &lt;/app-table-light&gt;
 &lt;/app-template-full-width&gt;
-&lt;div class&#x3D;&quot;container mt-3&quot;&gt;
-  &lt;div class&#x3D;&quot;row&quot;&gt;
-    &lt;div class&#x3D;&quot;app-color-primary col-2&quot;&gt;ID&lt;/div&gt;
-    &lt;div class&#x3D;&quot;app-color-primary col-2&quot;&gt;CLIENT&lt;/div&gt;
-    &lt;div class&#x3D;&quot;app-color-primary col-2&quot;&gt;COMMENT&lt;/div&gt;
-    &lt;div class&#x3D;&quot;app-color-primary col-2&quot;&gt;STATE&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;hr /&gt;
-  &lt;div *ngFor&#x3D;&quot;let order of orderList&quot;&gt;
-    &lt;div class&#x3D;&quot;row&quot;&gt;
-      &lt;div class&#x3D;&quot;text-secondary col-2 mt-2&quot;&gt;{{ order.id }}&lt;/div&gt;
-      &lt;div class&#x3D;&quot;text-secondary col-2 mt-2&quot;&gt;{{ order.client }}&lt;/div&gt;
-      &lt;div class&#x3D;&quot;text-secondary col-2 mt-2&quot;&gt;{{ order.comment }}&lt;/div&gt;
-      &lt;div
-        [ngClass]&#x3D;&quot;{
-          &#x27;state-success&#x27;: order.state &#x3D;&#x3D;&#x3D; &#x27;CONFIRMED&#x27;,
-          &#x27;state-warning&#x27;: order.state &#x3D;&#x3D;&#x3D; &#x27;OPTION&#x27;,
-          &#x27;state-danger&#x27;: order.state &#x3D;&#x3D;&#x3D; &#x27;CANCELLED&#x27;
-        }&quot;
-        class&#x3D;&quot;col-2 mt-2&quot;
-      &gt;
-        {{ order.state }}
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+&lt;app-btn [classList]&#x3D;&quot;&#x27;btn btn-primary ms-5&#x27;&quot; [routerLink]&#x3D;&quot;&#x27;add&#x27;&quot;&gt;&lt;/app-btn&gt;
 </code></pre>
     </div>
 
@@ -567,7 +683,18 @@ export class PageListOrdersComponent implements OnInit {
                 <p class="comment">
                     <code>./page-list-orders.component.scss</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss"></code></pre>
+                <pre class="line-numbers"><code class="language-scss">.state-success {
+  background: var(--app-success);
+}
+
+.state-warning {
+  background: var(--app-warning);
+}
+
+.state-danger {
+  background: var(--app-error);
+}
+</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -595,9 +722,9 @@ export class PageListOrdersComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><span *ngIf="!orderList">No orders in database !</span><app-template-full-width [title]="title">  <app-table-light [headers]="headers">    <tr *ngFor="let data of orderList">      <td>        <app-icon-edit          id="{{ \'edit\' + data.id }}"          class="tr-edit btn"        ></app-icon-edit>        <app-icon-delete          id="{{ \'delete\' + data.id }}"          class="tr-delete btn"        ></app-icon-delete>      </td>      <td>{{ data.typePresta }}</td>      <td>{{ data.client }}</td>      <td>{{ data.nbJours }}</td>      <td>{{ data.nbJours }}</td>      <td>{{ data.tjmHt | number: "1.0-0" }}</td>      <td>{{ data | total | number: "1.0-0" }}</td>      <td>{{ data | total: true | number: "1.0-0" }}</td>      <td>        <select                  [ngClass]="{            \'state-success\': data.state === \'CONFIRMED\',            \'state-warning\': data.state === \'OPTION\',            \'state-danger\': data.state === \'CANCELLED\'          }"          name=""          id=""        >          <option value="CONFIRMED">            CONFIRMED          </option>          <option value="OPTION">OPTION</option>          <option value="CANCELLED">            CANCELLED          </option>        </select>      </td>    </tr>  </app-table-light></app-template-full-width><div class="container mt-3">  <div class="row">    <div class="app-color-primary col-2">ID</div>    <div class="app-color-primary col-2">CLIENT</div>    <div class="app-color-primary col-2">COMMENT</div>    <div class="app-color-primary col-2">STATE</div>  </div>  <hr />  <div *ngFor="let order of orderList">    <div class="row">      <div class="text-secondary col-2 mt-2">{{ order.id }}</div>      <div class="text-secondary col-2 mt-2">{{ order.client }}</div>      <div class="text-secondary col-2 mt-2">{{ order.comment }}</div>      <div        [ngClass]="{          \'state-success\': order.state === \'CONFIRMED\',          \'state-warning\': order.state === \'OPTION\',          \'state-danger\': order.state === \'CANCELLED\'        }"        class="col-2 mt-2"      >        {{ order.state }}      </div>    </div>  </div></div></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BtnComponent', 'selector': 'app-btn'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IconCloseComponent', 'selector': 'app-icon-close'},{'name': 'IconDeleteComponent', 'selector': 'app-icon-delete'},{'name': 'IconEditComponent', 'selector': 'app-icon-edit'},{'name': 'IconNavComponent', 'selector': 'app-icon-nav'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'PageAddClientComponent', 'selector': 'app-page-add-client'},{'name': 'PageAddOrderComponent', 'selector': 'app-page-add-order'},{'name': 'PageEditClientComponent', 'selector': 'app-page-edit-client'},{'name': 'PageEditOrderComponent', 'selector': 'app-page-edit-order'},{'name': 'PageForgotPasswordComponent', 'selector': 'app-page-forgot-password'},{'name': 'PageListClientsComponent', 'selector': 'app-page-list-clients'},{'name': 'PageListOrdersComponent', 'selector': 'app-page-list-orders'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PageResetPasswordComponent', 'selector': 'app-page-reset-password'},{'name': 'PageSignInComponent', 'selector': 'app-page-sign-in'},{'name': 'PageSignUpComponent', 'selector': 'app-page-sign-up'},{'name': 'TableLightComponent', 'selector': 'app-table-light'},{'name': 'TemplateContainerComponent', 'selector': 'app-template-container'},{'name': 'TemplateFullWidthComponent', 'selector': 'app-template-full-width'},{'name': 'UiComponent', 'selector': 'app-ui'}];
-    var DIRECTIVES = [];
+        var COMPONENT_TEMPLATE = '<div><app-template-full-width  [title]="title"  *ngIf="collection$ | async as collection">  <app-table-light [headers]="headers">    <tr *ngFor="let data of collection">      <td>        <a routerLink="edit/{{ data.id }}">          <app-icon-edit class="tr-edit btn"></app-icon-edit        ></a>        <a routerLink="delete/{{ data.id }}">          <app-icon-delete class="tr-delete btn"></app-icon-delete>        </a>      </td>      <td>{{ data.typePresta }}</td>      <td>{{ data.client }}</td>      <td>{{ data.nbJours }}</td>      <td>{{ data.tjmHt | number: "1.0-0" }}</td>      <td>{{ data | total | number: "1.0-0" }}</td>      <td>{{ data | total: true | number: "1.0-0" }}</td>      <td      appState [state]="data.state">        <select (change)="changeState(data, $event)"        >          <option            *ngFor="let state of states"            [selected]="state === data.state"            [value]="state"          >            {{ state }}          </option>        </select>      </td>    </tr>  </app-table-light></app-template-full-width><app-btn [classList]="\'btn btn-primary ms-5\'" [routerLink]="\'add\'"></app-btn></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BtnComponent', 'selector': 'app-btn'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IconCloseComponent', 'selector': 'app-icon-close'},{'name': 'IconDeleteComponent', 'selector': 'app-icon-delete'},{'name': 'IconEditComponent', 'selector': 'app-icon-edit'},{'name': 'IconNavComponent', 'selector': 'app-icon-nav'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'PageAddClientComponent', 'selector': 'app-page-add-client'},{'name': 'PageAddOrderComponent', 'selector': 'app-page-add-order'},{'name': 'PageEditClientComponent', 'selector': 'app-page-edit-client'},{'name': 'PageEditOrderComponent', 'selector': 'app-page-edit-order'},{'name': 'PageForgotPasswordComponent', 'selector': 'app-page-forgot-password'},{'name': 'PageListClientsComponent', 'selector': 'app-page-list-clients'},{'name': 'PageListOrdersComponent', 'selector': 'app-page-list-orders'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PageResetPasswordComponent', 'selector': 'app-page-reset-password'},{'name': 'PageSignInComponent', 'selector': 'app-page-sign-in'},{'name': 'PageSignUpComponent', 'selector': 'app-page-sign-up'},{'name': 'TableLightComponent', 'selector': 'app-table-light'},{'name': 'TemplateContainerComponent', 'selector': 'app-template-container'},{'name': 'TemplateFormComponent', 'selector': 'app-template-form'},{'name': 'TemplateFullWidthComponent', 'selector': 'app-template-full-width'},{'name': 'UiComponent', 'selector': 'app-ui'}];
+    var DIRECTIVES = [{'name': 'StateDirective', 'selector': '[appState]'}];
     var ACTUAL_COMPONENT = {'name': 'PageListOrdersComponent'};
 </script>
 <script src="../js/tree.js"></script>

@@ -1,0 +1,70 @@
+<form  class="m-5" [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="typePresta">Type</label>
+    <input
+      type="text"
+      class="form-control"
+      id="typePresta"
+      formControlName="typePresta"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="client">Client</label>
+    <input
+      type="text"
+      class="form-control"
+      id="client"
+      formControlName="client"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="nbJours">Number of days</label>
+    <input
+      type="number"
+      class="form-control"
+      id="nbJours"
+      formControlName="nbJours"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="tjmHt">Daily rate (w/o taxes)</label>
+    <input
+      type="number"
+      class="form-control"
+      id="tjmHt"
+      formControlName="tjmHt"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="tva">VAT (%)</label>
+    <input type="number" class="form-control" id="tva" formControlName="tva" />
+  </div>
+
+  <div class="form-group">
+    <label for="state">State</label>
+    <select class="form-control" id="state" formControlName="state">
+      <option
+        [selected]="state === state"
+        *ngFor="let state of states"
+        [value]="state"
+      >
+        {{ state }}
+      </option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="comment">Comment</label>
+    <textarea
+      class="form-control"
+      id="comment"
+      formControlName="comment"
+    ></textarea>
+  </div>
+
+  <button [disabled]="formGroup.invalid" type="submit" class="btn btn-primary mt-3">Submit</button>
+</form>

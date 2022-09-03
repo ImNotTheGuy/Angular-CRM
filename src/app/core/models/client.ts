@@ -1,8 +1,9 @@
 import { StateClient } from "../enums/state-client";
 
 export class Client {
-  state!: StateClient;
-  tva!: number;
+
+  state = StateClient.ACTIVE;
+  tva = 20;
   id!: number;
   name!: string;
   totalCaHt!: number;

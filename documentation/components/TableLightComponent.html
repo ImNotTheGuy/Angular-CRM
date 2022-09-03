@@ -188,7 +188,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/shared/components/table-light/table-light.component.ts:15</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/shared/components/table-light/table-light.component.ts:12</a></div>
                             </td>
                         </tr>
 
@@ -214,7 +214,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/shared/components/table-light/table-light.component.ts:13</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/shared/components/table-light/table-light.component.ts:10</a></div>
                             </td>
                         </tr>
             </tbody>
@@ -248,8 +248,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="19"
-                            class="link-to-prism">src/app/shared/components/table-light/table-light.component.ts:19</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="16"
+                            class="link-to-prism">src/app/shared/components/table-light/table-light.component.ts:16</a></div>
                 </td>
             </tr>
 
@@ -295,7 +295,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/shared/components/table-light/table-light.component.ts:15</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/shared/components/table-light/table-light.component.ts:12</a></div>
                         </td>
                     </tr>
 
@@ -309,35 +309,21 @@
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Input, OnInit } from &#x27;@angular/core&#x27;;
-import { Client } from &#x27;src/app/core/models/client&#x27;;
-import { Order } from &#x27;src/app/core/models/order&#x27;;
 
 @Component({
   selector: &#x27;app-table-light&#x27;,
   templateUrl: &#x27;./table-light.component.html&#x27;,
-  styleUrls: [&#x27;./table-light.component.scss&#x27;]
+  styleUrls: [&#x27;./table-light.component.scss&#x27;],
 })
 export class TableLightComponent implements OnInit {
-
   // @Input() tableData!: any[];
   @Input() headers!: string[];
 
   valuesList: string[] &#x3D; [];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
-  // ngOnChanges(){
-  //   console.log(&#x27;this.tableData (on changes) :&gt;&gt; &#x27;, this.tableData);
-  //   console.log(&#x27;this.headers (on changes) :&gt;&gt; &#x27;, this.headers);
-  //   this.tableData.forEach(data &#x3D;&gt; {
-  //     Object.entries(data).forEach(value &#x3D;&gt; {
-  //       this.valuesList.push(data);
-  //     })
-  //   });
-  // }
+  ngOnInit(): void {}
 
 }
 </code></pre>
@@ -407,8 +393,8 @@ export class TableLightComponent implements OnInit {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><div class="container">  <!-- <div class="row">    <div *ngFor="let col of headers" class="col">{{ col }}</div>  </div>  <div class="row">    <div *ngFor="let data of tableData" class="col">      <div>{{ data }}</div>    </div>  </div></div> --><table class="table">  <!-- thead utile pour le référencement -->  <thead>    <!-- table row (ligne) -->    <tr>      <!--   table header cells (th) -->      <!-- itérer dans headers -->      <th *ngFor=\'let item of headers\' scope="col">{{item}}</th>    </tr>  </thead>  <tbody>    <ng-content></ng-content>    <!-- itérer dans collection -->  </tbody></table></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BtnComponent', 'selector': 'app-btn'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IconCloseComponent', 'selector': 'app-icon-close'},{'name': 'IconDeleteComponent', 'selector': 'app-icon-delete'},{'name': 'IconEditComponent', 'selector': 'app-icon-edit'},{'name': 'IconNavComponent', 'selector': 'app-icon-nav'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'PageAddClientComponent', 'selector': 'app-page-add-client'},{'name': 'PageAddOrderComponent', 'selector': 'app-page-add-order'},{'name': 'PageEditClientComponent', 'selector': 'app-page-edit-client'},{'name': 'PageEditOrderComponent', 'selector': 'app-page-edit-order'},{'name': 'PageForgotPasswordComponent', 'selector': 'app-page-forgot-password'},{'name': 'PageListClientsComponent', 'selector': 'app-page-list-clients'},{'name': 'PageListOrdersComponent', 'selector': 'app-page-list-orders'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PageResetPasswordComponent', 'selector': 'app-page-reset-password'},{'name': 'PageSignInComponent', 'selector': 'app-page-sign-in'},{'name': 'PageSignUpComponent', 'selector': 'app-page-sign-up'},{'name': 'TableLightComponent', 'selector': 'app-table-light'},{'name': 'TemplateContainerComponent', 'selector': 'app-template-container'},{'name': 'TemplateFullWidthComponent', 'selector': 'app-template-full-width'},{'name': 'UiComponent', 'selector': 'app-ui'}];
-    var DIRECTIVES = [];
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BtnComponent', 'selector': 'app-btn'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IconCloseComponent', 'selector': 'app-icon-close'},{'name': 'IconDeleteComponent', 'selector': 'app-icon-delete'},{'name': 'IconEditComponent', 'selector': 'app-icon-edit'},{'name': 'IconNavComponent', 'selector': 'app-icon-nav'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'PageAddClientComponent', 'selector': 'app-page-add-client'},{'name': 'PageAddOrderComponent', 'selector': 'app-page-add-order'},{'name': 'PageEditClientComponent', 'selector': 'app-page-edit-client'},{'name': 'PageEditOrderComponent', 'selector': 'app-page-edit-order'},{'name': 'PageForgotPasswordComponent', 'selector': 'app-page-forgot-password'},{'name': 'PageListClientsComponent', 'selector': 'app-page-list-clients'},{'name': 'PageListOrdersComponent', 'selector': 'app-page-list-orders'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PageResetPasswordComponent', 'selector': 'app-page-reset-password'},{'name': 'PageSignInComponent', 'selector': 'app-page-sign-in'},{'name': 'PageSignUpComponent', 'selector': 'app-page-sign-up'},{'name': 'TableLightComponent', 'selector': 'app-table-light'},{'name': 'TemplateContainerComponent', 'selector': 'app-template-container'},{'name': 'TemplateFormComponent', 'selector': 'app-template-form'},{'name': 'TemplateFullWidthComponent', 'selector': 'app-template-full-width'},{'name': 'UiComponent', 'selector': 'app-ui'}];
+    var DIRECTIVES = [{'name': 'StateDirective', 'selector': '[appState]'}];
     var ACTUAL_COMPONENT = {'name': 'TableLightComponent'};
 </script>
 <script src="../js/tree.js"></script>

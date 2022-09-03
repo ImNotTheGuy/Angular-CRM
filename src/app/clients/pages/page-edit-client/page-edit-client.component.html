@@ -1,1 +1,8 @@
-<p>page-edit-client works!</p>
+<app-template-full-width [title]="'Add a client'">
+
+  <app-form-client
+    *ngIf="client$ | async as client"
+    [client]="client"
+    (onSubmitEvent)="update($event)"
+  ></app-form-client>
+</app-template-full-width>

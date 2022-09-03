@@ -43,5 +43,17 @@ export class PageListClientsComponent implements OnInit {
 
   }
 
+  delete(id: number){
+    this.clientsService.deleteById(id).subscribe();
+    this.clientsService.refreshCollection();
+  }
+
+  // deleteById(id: number) {
+  //   this.ordersService.deleteById(id).subscribe();
+  //   this.ordersService.refreshCollection();
+  // }
+
+
+
   ngOnInit(): void {}
 }

@@ -134,13 +134,16 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#clientList" >clientList</a>
+                                <a href="#collection" >collection</a>
                             </li>
                             <li>
                                 <a href="#headers" >headers</a>
                             </li>
                             <li>
                                 <a href="#properties" >properties</a>
+                            </li>
+                            <li>
+                                <a href="#states" >states</a>
                             </li>
                             <li>
                                 <a href="#title" >title</a>
@@ -160,6 +163,9 @@
                 <tr>
                     <td class="col-md-4">
                         <ul class="index-list">
+                            <li>
+                                <a href="#changeState" >changeState</a>
+                            </li>
                             <li>
                                 <a href="#ngOnInit" >ngOnInit</a>
                             </li>
@@ -186,7 +192,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/clients/pages/page-list-clients/page-list-clients.component.ts:18</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/clients/pages/page-list-clients/page-list-clients.component.ts:28</a></div>
                             </td>
                         </tr>
 
@@ -237,6 +243,87 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="changeState"></a>
+                    <span class="name">
+                        <span ><b>changeState</b></span>
+                        <a href="#changeState"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeState(client: <a href="../classes/Client.html" target="_self">Client</a>, event: <a href="https://angular.io/api/router/Event" target="_blank">Event</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="37"
+                            class="link-to-prism">src/app/clients/pages/page-list-clients/page-list-clients.component.ts:37</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>client</td>
+                                    <td>
+                                                <code><a href="../classes/Client.html" target="_self" >Client</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/router/Event" target="_blank" >Event</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="ngOnInit"></a>
                     <span class="name">
                         <span ><b>ngOnInit</b></span>
@@ -253,8 +340,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="26"
-                            class="link-to-prism">src/app/clients/pages/page-list-clients/page-list-clients.component.ts:26</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="46"
+                            class="link-to-prism">src/app/clients/pages/page-list-clients/page-list-clients.component.ts:46</a></div>
                 </td>
             </tr>
 
@@ -280,10 +367,10 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="clientList"></a>
+                    <a name="collection"></a>
                     <span class="name">
-                        <span ><b>clientList</b></span>
-                        <a href="#clientList"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>collection</b></span>
+                        <a href="#collection"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
@@ -295,7 +382,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/clients/pages/page-list-clients/page-list-clients.component.ts:16</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/clients/pages/page-list-clients/page-list-clients.component.ts:18</a></div>
                         </td>
                     </tr>
 
@@ -321,12 +408,20 @@
                 </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Default value : </i><code>[&#x27;state&#x27;, &#x27;tva&#x27;, &#x27;id&#x27;, &#x27;name&#x27;, &#x27;totalCaHt&#x27;, &#x27;comment&#x27;]</code>
+                        <i>Default value : </i><code>[
+    &#x27;Action&#x27;,
+    &#x27;TVA&#x27;,
+    &#x27;id&#x27;,
+    &#x27;Name&#x27;,
+    &#x27;Total CA (HT)&#x27;,
+    &#x27;Comment&#x27;,
+    &#x27;State&#x27;
+  ]</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/clients/pages/page-list-clients/page-list-clients.component.ts:18</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/clients/pages/page-list-clients/page-list-clients.component.ts:20</a></div>
                         </td>
                     </tr>
 
@@ -352,7 +447,32 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/clients/pages/page-list-clients/page-list-clients.component.ts:17</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/clients/pages/page-list-clients/page-list-clients.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="states"></a>
+                    <span class="name">
+                        <span ><b>states</b></span>
+                        <a href="#states"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>Object.values(StateClient)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/clients/pages/page-list-clients/page-list-clients.component.ts:14</a></div>
                         </td>
                     </tr>
 
@@ -383,7 +503,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/clients/pages/page-list-clients/page-list-clients.component.ts:12</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/clients/pages/page-list-clients/page-list-clients.component.ts:13</a></div>
                         </td>
                     </tr>
 
@@ -403,12 +523,12 @@
             </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Default value : </i><code>environment.urlApi + &#x27;clients&#x27;</code>
+                        <i>Default value : </i><code>environment.urlApi + &quot;/clients/&quot;</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/clients/pages/page-list-clients/page-list-clients.component.ts:14</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/clients/pages/page-list-clients/page-list-clients.component.ts:16</a></div>
                         </td>
                     </tr>
 
@@ -422,6 +542,7 @@
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { StateClient } from &#x27;src/app/core/enums/state-client&#x27;;
 import { Client } from &#x27;src/app/core/models/client&#x27;;
 import { environment } from &#x27;src/environments/environment&#x27;;
 import { ClientsService } from &#x27;../../services/clients.service&#x27;;
@@ -433,17 +554,36 @@ import { ClientsService } from &#x27;../../services/clients.service&#x27;;
 })
 export class PageListClientsComponent implements OnInit {
   title &#x3D; &#x27;💃🏽 Clients&#x27;;
+  states &#x3D; Object.values(StateClient);
 
-   URL_CLIENTS &#x3D; environment.urlApi + &#x27;clients&#x27;;
+  URL_CLIENTS &#x3D; environment.urlApi + &quot;/clients/&quot;;
 
-  clientList!: Client[];
+  collection!: Client[];
   properties: any;
-  headers &#x3D; [&#x27;state&#x27;, &#x27;tva&#x27;, &#x27;id&#x27;, &#x27;name&#x27;, &#x27;totalCaHt&#x27;, &#x27;comment&#x27;];
+  headers &#x3D; [
+    &#x27;Action&#x27;,
+    &#x27;TVA&#x27;,
+    &#x27;id&#x27;,
+    &#x27;Name&#x27;,
+    &#x27;Total CA (HT)&#x27;,
+    &#x27;Comment&#x27;,
+    &#x27;State&#x27;
+  ];
 
   constructor(private clientsService: ClientsService) {
     this.clientsService.collection.subscribe((data) &#x3D;&gt; {
-      this.clientList &#x3D; data;
+      this.collection &#x3D; data;
     });
+
+  }
+
+  changeState(client: Client, event: Event) {
+    const target &#x3D; event.target as HTMLSelectElement;
+    const newState &#x3D; target.value as StateClient;
+    this.clientsService.changeState(client, newState).subscribe((res) &#x3D;&gt;{
+      Object.assign(client, res);
+    });
+
   }
 
   ngOnInit(): void {}
@@ -452,20 +592,42 @@ export class PageListClientsComponent implements OnInit {
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;span *ngIf&#x3D;&quot;!clientList&quot;&gt;No clients in database !&lt;/span&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;span *ngIf&#x3D;&quot;!collection&quot;&gt;No clients in database !&lt;/span&gt;
 
 &lt;app-template-full-width [title]&#x3D;&quot;title&quot;&gt;
-  &lt;app-table-light
+  &lt;app-table-light [headers]&#x3D;&quot;headers&quot;&gt;
+    &lt;tr *ngFor&#x3D;&quot;let data of collection&quot;&gt;
+      &lt;td&gt;
+        &lt;a routerLink&#x3D;&quot;edit/{{ data.id }}&quot;&gt;
+          &lt;app-icon-edit class&#x3D;&quot;tr-edit btn&quot;&gt;&lt;/app-icon-edit
+        &gt;&lt;/a&gt;
+        &lt;a routerLink&#x3D;&quot;delete/{{ data.id }}&quot;&gt;
+          &lt;app-icon-delete class&#x3D;&quot;tr-delete btn&quot;&gt;&lt;/app-icon-delete&gt;
+        &lt;/a&gt;
+      &lt;/td&gt;
+      &lt;td&gt;{{ data.tva }}%&lt;/td&gt;
+      &lt;td&gt;{{ data.id }}&lt;/td&gt;
+      &lt;td&gt;{{ data.name }}&lt;/td&gt;
+      &lt;td&gt;{{ data.totalCaHt | number }}&lt;/td&gt;
+      &lt;td&gt;{{ data.comment }}&lt;/td&gt;
 
-    [headers]&#x3D;&quot;headers&quot;
-
-  &gt;
-&lt;app-icon-edit class&#x3D;&quot;tr-edit&quot;&gt;&lt;/app-icon-edit&gt;
-&lt;app-icon-delete class&#x3D;&quot;tr-delete&quot;&gt;&lt;/app-icon-delete&gt;
-&lt;/app-table-light&gt;
+      &lt;td appState [state]&#x3D;&quot;data.state&quot;&gt;
+        &lt;select (change)&#x3D;&quot;changeState(data, $event)&quot;&gt;
+          &lt;option
+            *ngFor&#x3D;&quot;let state of states&quot;
+            [selected]&#x3D;&quot;state &#x3D;&#x3D;&#x3D; data.state&quot;
+            [value]&#x3D;&quot;state&quot;
+          &gt;
+            {{ state }}
+          &lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/app-table-light&gt;
 &lt;/app-template-full-width&gt;
+&lt;app-btn [classList]&#x3D;&quot;&#x27;btn btn-primary ms-5&#x27;&quot; [routerLink]&#x3D;&quot;&#x27;add&#x27;&quot;&gt;&lt;/app-btn&gt;
 
-&lt;div class&#x3D;&quot;container mt-3&quot;&gt;
+&lt;!-- &lt;div class&#x3D;&quot;container mt-3&quot;&gt;
   &lt;div class&#x3D;&quot;row&quot;&gt;
     &lt;div class&#x3D;&quot;app-color-primary col-2&quot;&gt;ID&lt;/div&gt;
     &lt;div class&#x3D;&quot;app-color-primary col-2&quot;&gt;NAME&lt;/div&gt;
@@ -473,7 +635,7 @@ export class PageListClientsComponent implements OnInit {
     &lt;div class&#x3D;&quot;app-color-primary col-2&quot;&gt;STATE&lt;/div&gt;
   &lt;/div&gt;
   &lt;hr /&gt;
-  &lt;div *ngFor&#x3D;&quot;let client of clientList&quot;&gt;
+  &lt;div *ngFor&#x3D;&quot;let client of collection&quot;&gt;
     &lt;div class&#x3D;&quot;row&quot;&gt;
       &lt;div class&#x3D;&quot;text-secondary col-2&quot;&gt;{{ client.id }}&lt;/div&gt;
       &lt;div class&#x3D;&quot;text-secondary col-2&quot;&gt;{{ client.name }}&lt;/div&gt;
@@ -489,7 +651,7 @@ export class PageListClientsComponent implements OnInit {
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+&lt;/div&gt; --&gt;
 </code></pre>
     </div>
 
@@ -498,6 +660,17 @@ export class PageListClientsComponent implements OnInit {
                     <code>./page-list-clients.component.scss</code>
                 </p>
                 <pre class="line-numbers"><code class="language-scss">
+.state-success {
+  background: var(--app-success);
+}
+
+.state-warning {
+  background: var(--app-warning);
+}
+
+.state-danger {
+  background: var(--app-error);
+}
 </code></pre>
     </div>
 
@@ -526,9 +699,9 @@ export class PageListClientsComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><span *ngIf="!clientList">No clients in database !</span><app-template-full-width [title]="title">  <app-table-light    [headers]="headers"  ><app-icon-edit class="tr-edit"></app-icon-edit><app-icon-delete class="tr-delete"></app-icon-delete></app-table-light></app-template-full-width><div class="container mt-3">  <div class="row">    <div class="app-color-primary col-2">ID</div>    <div class="app-color-primary col-2">NAME</div>    <div class="app-color-primary col-2">COMMENT</div>    <div class="app-color-primary col-2">STATE</div>  </div>  <hr />  <div *ngFor="let client of clientList">    <div class="row">      <div class="text-secondary col-2">{{ client.id }}</div>      <div class="text-secondary col-2">{{ client.name }}</div>      <div class="text-secondary col-2">{{ client.comment }}</div>      <div        [ngClass]="{          \'state-success blue\': client.state === \'ACTIVE\',          \'state-danger\': client.state === \'INACTIVE\'        }"        class="col-2"      >        {{ client.state }}      </div>    </div>  </div></div></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BtnComponent', 'selector': 'app-btn'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IconCloseComponent', 'selector': 'app-icon-close'},{'name': 'IconDeleteComponent', 'selector': 'app-icon-delete'},{'name': 'IconEditComponent', 'selector': 'app-icon-edit'},{'name': 'IconNavComponent', 'selector': 'app-icon-nav'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'PageAddClientComponent', 'selector': 'app-page-add-client'},{'name': 'PageAddOrderComponent', 'selector': 'app-page-add-order'},{'name': 'PageEditClientComponent', 'selector': 'app-page-edit-client'},{'name': 'PageEditOrderComponent', 'selector': 'app-page-edit-order'},{'name': 'PageForgotPasswordComponent', 'selector': 'app-page-forgot-password'},{'name': 'PageListClientsComponent', 'selector': 'app-page-list-clients'},{'name': 'PageListOrdersComponent', 'selector': 'app-page-list-orders'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PageResetPasswordComponent', 'selector': 'app-page-reset-password'},{'name': 'PageSignInComponent', 'selector': 'app-page-sign-in'},{'name': 'PageSignUpComponent', 'selector': 'app-page-sign-up'},{'name': 'TableLightComponent', 'selector': 'app-table-light'},{'name': 'TemplateContainerComponent', 'selector': 'app-template-container'},{'name': 'TemplateFullWidthComponent', 'selector': 'app-template-full-width'},{'name': 'UiComponent', 'selector': 'app-ui'}];
-    var DIRECTIVES = [];
+        var COMPONENT_TEMPLATE = '<div><span *ngIf="!collection">No clients in database !</span><app-template-full-width [title]="title">  <app-table-light [headers]="headers">    <tr *ngFor="let data of collection">      <td>        <a routerLink="edit/{{ data.id }}">          <app-icon-edit class="tr-edit btn"></app-icon-edit        ></a>        <a routerLink="delete/{{ data.id }}">          <app-icon-delete class="tr-delete btn"></app-icon-delete>        </a>      </td>      <td>{{ data.tva }}%</td>      <td>{{ data.id }}</td>      <td>{{ data.name }}</td>      <td>{{ data.totalCaHt | number }}</td>      <td>{{ data.comment }}</td>      <td appState [state]="data.state">        <select (change)="changeState(data, $event)">          <option            *ngFor="let state of states"            [selected]="state === data.state"            [value]="state"          >            {{ state }}          </option>        </select>      </td>    </tr>  </app-table-light></app-template-full-width><app-btn [classList]="\'btn btn-primary ms-5\'" [routerLink]="\'add\'"></app-btn><!-- <div class="container mt-3">  <div class="row">    <div class="app-color-primary col-2">ID</div>    <div class="app-color-primary col-2">NAME</div>    <div class="app-color-primary col-2">COMMENT</div>    <div class="app-color-primary col-2">STATE</div>  </div>  <hr />  <div *ngFor="let client of collection">    <div class="row">      <div class="text-secondary col-2">{{ client.id }}</div>      <div class="text-secondary col-2">{{ client.name }}</div>      <div class="text-secondary col-2">{{ client.comment }}</div>      <div        [ngClass]="{          \'state-success blue\': client.state === \'ACTIVE\',          \'state-danger\': client.state === \'INACTIVE\'        }"        class="col-2"      >        {{ client.state }}      </div>    </div>  </div></div> --></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BtnComponent', 'selector': 'app-btn'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IconCloseComponent', 'selector': 'app-icon-close'},{'name': 'IconDeleteComponent', 'selector': 'app-icon-delete'},{'name': 'IconEditComponent', 'selector': 'app-icon-edit'},{'name': 'IconNavComponent', 'selector': 'app-icon-nav'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'PageAddClientComponent', 'selector': 'app-page-add-client'},{'name': 'PageAddOrderComponent', 'selector': 'app-page-add-order'},{'name': 'PageEditClientComponent', 'selector': 'app-page-edit-client'},{'name': 'PageEditOrderComponent', 'selector': 'app-page-edit-order'},{'name': 'PageForgotPasswordComponent', 'selector': 'app-page-forgot-password'},{'name': 'PageListClientsComponent', 'selector': 'app-page-list-clients'},{'name': 'PageListOrdersComponent', 'selector': 'app-page-list-orders'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PageResetPasswordComponent', 'selector': 'app-page-reset-password'},{'name': 'PageSignInComponent', 'selector': 'app-page-sign-in'},{'name': 'PageSignUpComponent', 'selector': 'app-page-sign-up'},{'name': 'TableLightComponent', 'selector': 'app-table-light'},{'name': 'TemplateContainerComponent', 'selector': 'app-template-container'},{'name': 'TemplateFormComponent', 'selector': 'app-template-form'},{'name': 'TemplateFullWidthComponent', 'selector': 'app-template-full-width'},{'name': 'UiComponent', 'selector': 'app-ui'}];
+    var DIRECTIVES = [{'name': 'StateDirective', 'selector': '[appState]'}];
     var ACTUAL_COMPONENT = {'name': 'PageListClientsComponent'};
 </script>
 <script src="../js/tree.js"></script>

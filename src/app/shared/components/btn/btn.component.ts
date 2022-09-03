@@ -8,7 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class BtnComponent implements OnInit {
 
   @Input() route!: string;
-  @Input() classList!: string;
+  @Input() styleBtn!: string;
+  @Input() label!: string;
 
   constructor() { }
 

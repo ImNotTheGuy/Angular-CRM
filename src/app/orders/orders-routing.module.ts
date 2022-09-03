@@ -7,8 +7,8 @@ import { PageListOrdersComponent } from './pages/page-list-orders/page-list-orde
 const routes: Routes = [
   {path: '', component: PageListOrdersComponent},
   {path: 'edit', component: PageEditOrderComponent},
-  {path: 'add', component: PageAddOrderComponent},
-  // {path: '**', redirectTo: ''}
+  {path: 'edit/:id', component: PageEditOrderComponent},
+  {path: 'add', component: PageAddOrderComponent}
 ];
 
 @NgModule({
