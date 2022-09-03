@@ -16,7 +16,6 @@ export class UiComponent implements OnInit {
   }
 
   toggle(): boolean{
-    console.log('this.navIsOpen :>> ', this.navIsOpen);
     this.navIsOpen = !this.navIsOpen;
     return this.navIsOpen;
   }

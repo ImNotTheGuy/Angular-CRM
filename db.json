@@ -103,9 +103,9 @@
   ],
   "clients": [
     {
+      "id": 2,
       "state": "ACTIVE",
       "tva": 20,
-      "id": 2,
       "name": "Modis",
       "totalCaHt": 120000,
       "comment": "un comment pour client modis"
@@ -141,6 +141,14 @@
       "name": "Minima consectetur ",
       "totalCaHt": 202,
       "comment": "Autem ratione maxime"
+    },
+    {
+      "id": 7,
+      "state": "ACTIVE",
+      "tva": 25,
+      "name": "Omnis accusamus earu",
+      "totalCaHt": 129,
+      "comment": "Illum pariatur Qui"
     }
   ]
 }

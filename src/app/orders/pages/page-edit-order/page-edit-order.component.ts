@@ -27,7 +27,6 @@ export class PageEditOrderComponent implements OnInit {
 
     this.orderService.getById(this.id).subscribe((res) => {
       this.order = res;
-      console.log('this.order :>> ', this.order);
     });
   }
 

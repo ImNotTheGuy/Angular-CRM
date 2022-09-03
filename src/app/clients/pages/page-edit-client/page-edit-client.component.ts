@@ -24,7 +24,6 @@ export class PageEditClientComponent implements OnInit {
 
     this.clientService.getById(this.id).subscribe((res) => {
       this.client = res;
-      console.log('this.order :>> ', this.client);
     });
     }
 

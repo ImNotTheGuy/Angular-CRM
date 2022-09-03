@@ -2,10 +2,7 @@ import { NgModule } from '@angular/core';
 import { Router, PreloadAllModules , RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  // { path: 'clients', component: PageListClientsComponent},
-  // { path: 'orders', component: PageListOrdersComponent},
   { path: '', redirectTo: '', pathMatch: 'full' },
-  // { path: 'sign-in', component: PageSignInComponent },
   {
     path: 'orders',
     loadChildren: () =>
@@ -33,6 +30,5 @@ const routes: Routes = [
 })
 export class AppRoutingModule {
   constructor(private router: Router){
-    // console.log(this.router.config, 'tableau de routes');
   }
 }

@@ -30,7 +30,6 @@ export class FormClientComponent implements OnInit {
   }
 
   public onSubmit() {
-    console.log('this.formGroup.value :>> ', this.formGroup.value);
     this.onSubmitEvent.emit(this.formGroup.value);
   }
 }

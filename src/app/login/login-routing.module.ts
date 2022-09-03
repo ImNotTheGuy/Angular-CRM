@@ -10,7 +10,6 @@ const routes: Routes = [
   {path: 'signup', component: PageSignUpComponent},
   {path: 'reset', component: PageResetPasswordComponent},
   {path: 'forgot', component: PageForgotPasswordComponent},
-  // {path: '**', redirectTo: ''},
 ];
 
 @NgModule({

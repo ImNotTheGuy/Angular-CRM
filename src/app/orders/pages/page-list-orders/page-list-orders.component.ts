@@ -50,10 +50,6 @@ export class PageListOrdersComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  ngOnChanges() {
-    console.log('something changed !');
-  }
-
   goToEdit(order: Order){
     this.router.navigate(['orders/edit/', order.id]);
   }
@@ -63,6 +59,6 @@ export class PageListOrdersComponent implements OnInit {
     this.ordersService.refreshCollection();
   }
 
-  
+
 
 }
